@@ -7,7 +7,102 @@ export default function Home() {
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
           <code className="font-mono font-bold">app/page.tsx</code>
-          Mike Lee&apos;s exercise answers can be found here
+          <p>Mike's Responses:</p>
+<button type="button" class="collapsible">From <a href="https://gist.github.com/Pieparker/b04a4e9ff82ba949e5db9d5b0e9d89e8" target="_blank">this list</a>, rank your 5 most favourite and 5 least favourite support tasks. Provide a brief explanation for each.</button>
+<div class="content">
+  <p>My 5 most favourite support tasks are the following:</p>
+  <ul>
+    <li><b>Analyze hundreds of support tickets to spot trends the product team can use.</b> With the help of technology (in having the right ticket metadata + data warehouse + BI tool), I'd look to automate a process to have this data at my fingertips so that I could report back to the product team and strategise on next actions (enhancements, bug fixes, training, knowledge articles, etc)</li>
+    <li><b>Manage a support team.</b> With today's remote workforce, it's important to me to establish good relationships with my team so I can build and maintain trust and honesty. A big part of my role is as an enabler to unblock any obstacles that my team or individuals may be experiencing so they can do their best work. This can range from sending a nudge to Engineering Management regarding a critical issue or jumping in on a call with a difficult customer. In terms of goals, I'd make sure that relevant targets are set and evaluated on regular intervals. Open communication ensures that there are no surprises at review time.</li>
+    <li><b>Find and recruit teammates for the support team</b> This is a critical task that I take very seriously. It's vital that there's a rigorous process here because I'd want to hire folks that have similar values (high customer focus, team oriented, emphathetic). Taking the effort to find the right candidates is worth it because the impact is much greater when having to offboard an existing employee.</li>
+    <li><b>Scheduling time-off coverage and collaborating as part of a growing cohesive support team</b> The scheduling part isn't that glamorous but collaboration and communication are key elements to success in a remote-first company. As a manager, I'd want to take as many opportunities to engage with members across the support team, not just the ones I manage. This would give me the opportunity to build bonds and relationship which is vital to a healthy department.</li>
+    <li><b>Help train and onboard new support teammates</b> Once new team members are hired, it's important that they are onboarded in a systematic way. As a manager, I'd like to be there with them in the beginning so they can feel supported and have confidence in me, and the company.</li>
+  </ul>
+  <p>My 5 least favourite support tasks are the following:</p>
+  <ul>
+    <li><b>Respond to 50+ support requests via email every day</b> This wouldn't be a faviourite task for me because I'd like to focus in on more of Why so many tickets are being requested and How or What can be done to either deflect them (with proper articles, videos, updates to product, platform fixes, etc). Like I mentioned above, I'd want to build data driven tools into the process to ensure we're regularly looking at signals that may be driving ticket volume and ways to deflect them proactively.</li>
+    <li><b>Help resolve billing issues for customers</b> While this is something I probably can be trained to do and may be willing to help out with in a rare pinch, I feel it would not be a good use of my time.</li>
+    <li><b>Respond to queries on Twitter, Reddit, Hacker News and other 3rd party sites</b> I feel like I can provide immediate value with my experiences in being a Support Engineer and a Manager. As a newcomer, responding to social media enquiries would be difficult and probably better to company/product veterans with a lot more experience.</li>
+    <li><b>Create video tutorials to help teach users a specific feature or use case</b> Honestly, I don't like the way I sound on the phone or in recordings so I think anything I'd work on wouldn't have high production value! In all seriousness, this is something I can probably aspire to do, but it would take a while for me to come up to speed. Like my answers in this section, it wouldn't be the best use of my skill set to do this.</li>
+    <li><b>Work with people to figure out if Vercel is suitable for their use case</b> This sounds like it could be a pre-sales type of opportunity and I'm no salesperson! This would probably be better handled by a Sales Engineer who would have </li>
+  </ul>
+</div>
+
+<button type="button" class="collapsible">What do you want to learn or do more of at work?</button>
+<div class="content">
+  <p>My last two jobs were pure management roles that had little to no ability for hands-on work. The reason why I got into Support in the first place is because I loved the challenge of got satisfaction in solving problems. I'd really love the ability to utilize my Unix knowledge and get my feet wet with customer-specific issues. It will also give me credibility with my team!</p>
+</div>
+
+<button type="button" class="collapsible">Describe how you solved a challenge or technical issue that you faced in a previous role (preferably in a previous support role). How did you determine that your solution was successful?</button>
+<div class="content">
+  <p>When I was at Clari, I worked on a customer issue where the Forecasting module reported incorrect data. After analysing the problem, I dug into the Forecasting code and determined that the logged in user's role was being taken into account when calculating a field. I was able to validate that the behavior was working correctly for his colleague (who had a different role). Once that user's role was set properly, he saw the expected value</p>
+</div>
+
+<button type="button" class="collapsible">When would you choose to use Edge Functions, Serverless Functions, or Edge Middleware with Vercel?</button>
+<div class="content">
+  <p>You would use Edge Middleware if you need to execute custom logic, rewrite, redirect, add headers, etc before returning a response. If you don't need Edge Middleware, then you could consider Edge Functions or Serverless Functions, depending on your performance requirements. Edge is better suited for applications that require low latency and high bandwidth. On the flip side, Serverless Functions provide greater scalability and easier integration.</p>
+</div>
+
+<button type="button" class="collapsible">Imagine a customer writes in requesting help with a build issue on a framework or technology that you've not seen before. How would you begin troubleshooting this and what questions would you ask the customer to understand the situation better?</button>
+<div class="content">
+  <p>Generally speaking, I would be looking for prior art. Some resources that I would use would be: Google search, internal computing repositories (Slack, JIRA, GitHub, Salesforce.com/ticketing system), internal personnel (via ticket smash, bug triage meetings that I may be a part of). Before I can search however, I'd need specific details from the customer such as the following: Is the issue readily reproducible? If yes, please provide the steps to reproduce. What changed recently? What's the exact error message? Please provide the logs. Please provide details on your environment and configuration. What steps have you taken to resolve the issue?</p>
+</div>
+
+<button type="button" class="collapsible">The customer from question 5 replies to your response with the below. <i>“I’m so frustrated. I’ve been trying to make this work for hours and I just can’t figure it out. It must be a platform issue so just fix it for me instead of asking me questions.”</i> Please write a follow-up reply to the customer.</button>
+<div class="content">
+  <p>Hello Customer, I'm sorry that you're frustrated but I wanted to let you know that you're working with a technology that we haven't seen before. I checked our <a href="https://www.vercel-status.com/" target="_blank">Status Page</a>, and we're fully operational so we can rule that out. Now that you've provided me with all of the requested info, I'll be able to dive deeper into the details of your issue. Thanks for your patience, I will get back to you later on today with an update. In the meantime, don't hesitate to reach out if you have further questions or anything changes.
+
+Not related to the customer response, but I did see the <a href="https://vercel.com/legal/support-terms" target="_blank">Support Legal Terms</a> page which defines the scope of support. It may be appropriate to have pointed out this document in the initial reply in order to set customer expectations appropriately.
+</p>
+</div>
+
+<button type="button" class="collapsible">A customer writes in to the Helpdesk asking "How do I do a redirect from the /blog path to https://example.com?" Please write a reply to the customer. Feel free to add any information about your decision making process after the reply.</button>
+<div class="content">
+  <p>Hello Customer, thank you for your enquiry. You have reached the Support team but the preferred medium for questions regarding best practices, code debugging, or implementation is the <a href="https://github.com/orgs/vercel/discussions" target="_blank">Community Support Forum</a>. It may be useful however, to refer to the official Vercel documentation site, more specifically this link to <a href="https://vercel.com/docs/edge-network/rewrites" target="_blank">Rewrites on Vercel</a>.
+
+How-to support isn't called out explicitly in the <a href="https://vercel.com/legal/support-terms" target="_blank">Support Legal Terms</a> page but it's implied. This exchange should hopefully educate the customer to look at the Community Support Forum when searching for answers. Longer term, it seems like providing a wizard, or AI-based guide would be helpful when customers submit tickets.
+</p>
+</div>
+
+<button type="button" class="collapsible">A customer is creating a site and would like their project not to be indexed by search engines. Please write a reply to the customer. Feel free to add any information about your decision making process after the reply.</button>
+<div class="content">
+  <p>Hello Customer, thank you for your enquiry. You have reached the Support team but the preferred medium for questions regarding best practices, code debugging, or implementation is the <a href="https://github.com/orgs/vercel/discussions" target="_blank">Community Support Forum</a>. This particular topic is a popular one and is referred to in several discussion posts. In fact, this topic is covered explicitly in the <a href="https://vercel.com/guides/are-vercel-preview-deployment-indexed-by-search-engines" target="_blank">Are Vercel Preview Deployments indexed by search engines?</a> Guide! This will provide you with the exact information that you'll need.
+  
+Just like the last question, I provided a pointer to the relevant doc/guide to help the user out despite it being out of Support scope. This exchange should hopefully educate the customer on Vercel's resources. As with the last question, a wizard or AI-based ticket intake form would have helped in this case.
+</div>
+
+<button type="button" class="collapsible">What do you think is one of the most common problems which customers ask Vercel for help with? How would you help customers to overcome common problems, short-term and long-term?</button>
+<div class="content">
+  <p>I've run over my 3 hour limit so I'll be brief. This is a hard question to answer given my limited exposure to Vercel. However, since there is a CI/CD element to it, I would imagine that customers may encounter errors during a build and not know how to investigate. Having said that, it seems like there are good resources available to troubleshoot this, and other common problems:
+  <ul>
+    <li><a href="https://vercel.com/docs/deployments/troubleshoot-a-build" target="_blank">Troubleshooting Build Errors</a></li>
+    <li><a href="https://vercel.com/docs/errors" target="_blank">Error Codes</a></li>
+    <li><a href="https://vercel.com/docs/errors/error-list" target="_blank">Error List</a></li>
+  </ul>
+  </p>
+</div>
+
+<button type="button" class="collapsible">How could we improve or alter this familiarisation exercise?</button>
+<div class="content">
+  <p>Answer Two</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+	this.classList.toggle("active");
+	var content = this.nextElementSibling;
+	if (content.style.display === "block") {
+  	content.style.display = "none";
+	} else {
+  	content.style.display = "block";
+	}
+  });
+}
+</script>
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
